@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app">
-      <h1>TypeScript Sandbox</h1>
+</head>
+<body>
+    <div class="container">
+      <div class="turno-display">
+        <label for="numeroTurno">Número de Turno:</label>
+        <input type="text" id="numeroTurno" class="numero-turno" readonly value="00"/>
+        <p class="texto-turno">Por favor, acérquese al mostrador</p>
+      </div>
+        <div class="botones">
+            <button id="botonMas">+</button>
+            <button id="botonMenos">-</button>
+            <button id="botonReset">Reset</button>
+        </div>
+    </div>
+    <div class="container">
+      <div class="nuevoTurno-display">
+        <label for="nuevoTurno">Nuevo Turno:</label>
+        <input type="text" id="nuevoTurno" class="numero-nuevoTurno" value="00" />
+        <p class="texto-nuevoTurno">Introduzca el turno que desee</p>
+      </div>
+      <div>
+        <div class="botones">
+          <button id="botonCambiarTurno">Cambiar Turno</button>
+      </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
-  </body>
+</body>
 </html>

@@ -29,6 +29,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #f0f0f0;
 }
 
 h1 {
@@ -85,13 +86,47 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+      color: #213547;
+      background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+      color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+      background-color: #f9f9f9;
   }
+}
+
+.turno-display, .nuevoTurno-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.texto-turno, .texto-nuevoTurno {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+.numero-turno, .numero-nuevoTurno{
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#numeroTurno, #nuevoTurno {
+  font-size: 2rem; 
+  text-align: center; 
+  width: 60px; 
+  margin: 10px 0; 
+}
+.botones{
+  text-align: center;
 }
