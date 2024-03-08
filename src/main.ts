@@ -53,8 +53,12 @@ const eventos = () =>{
         console.error("error del boton reset");
     }
 
+    const botonCambiarTurno = document.getElementById("botonCambiarTurno");
+    if (botonCambiarTurno !==null && botonCambiarTurno !== undefined && botonCambiarTurno instanceof HTMLButtonElement){
+          botonCambiarTurno.addEventListener("click", cambiarTurno);
     
     }
+  }
 const cambiarTurno = () => {
     const inputNuevoTurno = document.getElementById("nuevoTurno")
     if(inputNuevoTurno !== null && inputNuevoTurno !== undefined && inputNuevoTurno instanceof HTMLInputElement){
@@ -65,12 +69,8 @@ const cambiarTurno = () => {
         }
     }
 }
-const nuevoEvento = () =>{const botonCambiarTurno = document.getElementById("botonCambiarTurno");
-    if (botonCambiarTurno !==null && botonCambiarTurno !== undefined && botonCambiarTurno instanceof HTMLButtonElement){
-          botonCambiarTurno.addEventListener("click", cambiarTurno);
-    
-    }
-}
+
+
     
 
 document.addEventListener("DOMContentLoaded",() => {
